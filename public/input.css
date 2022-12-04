@@ -14,6 +14,14 @@
     font-family: type-machine;
     src: url('fonts/type_machine/Type\ Machine.ttf');
 }
+@font-face {
+    font-family: marcellus;
+    src: url('https: //fonts.gstatic.com/s/marcellus/v13/wEO_EBrOk8hQLDvIAF81VvoK_kgXiQ.woff2');
+}
+@font-face {
+    font-family: allura;
+    src: url('fonts/allura.regular.ttf');
+}
 html {
     height: 100%;
 }
@@ -22,6 +30,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-size: 13px !important;
+    font-family: monospace !important;
 }
 
 .icon-white{
@@ -95,8 +104,6 @@ body {
     background-repeat: round;
     background-size: cover; */
     min-height: 100vh;
-    border: 1px red;
-    border-style: inset;
 }
 .pg2-line {
     background-image: linear-gradient(#000, #000);
@@ -105,6 +112,23 @@ body {
     background-position: center center;
 }
 
+.font-name{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.font-type-machine{
+    font-family: type-machine;
+}
+
+.vertical-line {
+
+            display: inline-block;
+            border-left: 1px solid #ccc;
+            margin: 0 10px;
+            height: 125px;
+
+}
 #pg3 {
     /* BACKGROUND */
     /* background-image: url("img/bg-demo.jpg");
@@ -115,4 +139,9 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+}
+.bottom-fixed {
+    position: fixed !important;
+    bottom: 0;
+    z-index: 1030;
 }
