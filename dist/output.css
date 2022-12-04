@@ -729,32 +729,33 @@ body {
   margin: 0;
 }
 
-.container {
-  min-height: inherit;
-  margin: auto;
-  width: 60%;
+#col-center {
+  background-color: grey;
 }
 
 #pg1 {
   /* BACKGROUND */
-  background-image:url("./public/bg-demo.jpg");
+  background-image:url("./public/img/bg-demo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  min-height: 100vh;
 }
 
 #pg2 {
   /* BACKGROUND */
-  background-image: url("./public/bg-demo.jpg");
+  background-image: url("./public/img/bg-demo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 #pg3 {
   /* BACKGROUND */
-  background-image: url("./public/bg-demo.jpg");
+  background-image: url("./public/img/bg-demo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .pg1-title {
