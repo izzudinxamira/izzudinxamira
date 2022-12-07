@@ -24,14 +24,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- try dlu css sendiri -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
 </head>
 
 <body class="container-fluid">
     <div class="row">
-        <div class="col-sm"></div>
-        <div id="template" class="col-sm-6 p-0 shadow">
+        <div class="col-lg col-"></div>
+        <div id="template" class="col-lg-5 p-0 shadow">
             <nav class="d-flex navbar  navbar-dark bg-dark navbar-nav w-100 bottom-fixed right-0 left-0"
                 style="width:inherit !important">
                 <ul class="row m-auto p-0">
@@ -46,8 +44,8 @@
                             <img src="icons/call.svg" class="icon-white" />
                         </a>
                     </li>
-                    <li class="col">
-                        <a class="nav-link rsvp" href="#">
+                    <li class="col d-flex">
+                        <a class="nav-link rsvp m-auto" href="#">
                             RSVP
                         </a>
                     </li>
@@ -74,23 +72,15 @@
                     </div>
 
                     <div class="pg1-title2-group">
-                        <div class="pg1-title2">
-                            Izzudin
-                        </div>
-
-                        <div class="pg1-title2">
+                        Izzudin
+                        <div>
                             &
                         </div>
-
-                        <div class="pg1-title2">
-                            Amira
-                        </div>
+                        Amira
                     </div>
 
-                    <div class="pg1-title3 ">
-                        <div class="fw-bolder">
-                            SABTU | 25 FEB 2023
-                        </div>
+                    <div class="pg1-title3 fw-bolder font-type-machine">
+                        SABTU | 25 FEB 2023
                     </div>
 
                 </div>
@@ -106,7 +96,7 @@
                     WALIMATUL URUS
                 </div>
 
-                <div class="row py-5 font-name ">
+                <div class="row py-4 font-name ">
                     <div class="col-5 p-0 m-auto">
                         Razali Bin Ibrahim
                         <div>&</div>
@@ -139,13 +129,24 @@
                     ke majlis persandingan putera & puteri kami yang dikasihi
                 </div> -->
 
-                <div class="py-4 font-name">
+                <!-- <div class="py-5 font-name">
                     Mohd Izzudin
 
                     <div>&</div>
 
                     Amira Rashidah
+                </div> -->
+
+                <div class="row py-5 font-name">
+                    <div class="col-5 p-0 m-auto">
+                        Mohd Izzudin
+                    </div>
+                    <div class="col p-0  m-auto">&</div>
+                    <div class="col-5 p-0 m-auto">
+                        Amira Rashidah
+                    </div>
                 </div>
+
 
                 <div class="pb-3">
                     <div class="f-">TARIKH</div>
@@ -183,8 +184,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm"></div>
+        <div class="col-lg"></div>
     </div>
 </body>
+
+<script>
+    function redirectToCalendar() {
+        window.open("https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Izzudin%20x%20Amira&details=Assalamualaikum%20W.B.T%20%26%20Salam%20Sejahtera.%0A%0ADengan%20izin%20Allah%20S.W.T%20ke%20atas%20hambaNya%20yang%20merancang%2C%20kami%20dengan%20segala%20hormat%20dan%20penuh%20kesyukuran%20menjemput%20YBhg.%20Datuk%2FDato'%2FDatin%2FTuan%2FPuan%20ke%20majlis%20persandingan%20putera%20%26%20puteri%20kami%20yang%20dikasihi%0A%0AMOHD%20IZZUDIN%20BIN%20RAZALI%20%26%20AMIRA%20RASHIDAH%20BINTI%20MAD%20DAUD%0A%0ATARIKH%20%2F%20DATE%0ASABTU%2C%2025%20FEB%202023%0A%0AMASA%20%2F%20TIME%0A11%3A30%20AM%20-%204%3A00&location=https%3A%2F%2Fgoo.gl%2Fmaps%2FyZXWnQJkxnBPa2KJ7&dates=20230225T033000Z%2F20230225T080000Z&ctz=Asia%2FKuala_Lumpur", "_blank")
+    }
+</script>
 
 </html>
