@@ -24,10 +24,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body class="container-fluid">
     <div class="row">
+
         <div class="col-lg"></div>
         <div id="template" class="col-lg-5 p-0 shadow">
             <nav class="d-flex navbar  navbar-dark bg-dark navbar-nav w-100 bottom-fixed right-0 left-0"
@@ -45,9 +52,17 @@
                         </a>
                     </li>
                     <li class="col d-flex">
-                        <a class="nav-link rsvp m-auto" href="#">
+                        <a class="nav-link rsvp m-auto"
+                            href="javascript:void( window.open( 'https://form.jotform.com/223404361383046', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">
                             RSVP
                         </a>
+
+                        <!-- <a class="nav-link rsvp m-auto" onclick="openRSVPModal()">
+                            RSVP
+                        </a> -->
+
+                        <!-- href="javascript:void( window.open( 'https://form.jotform.com/223404361383046', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "> -->
+
                     </li>
                     <li class="col">
                         <a class="nav-link" target="_blank" href="#">
@@ -186,12 +201,38 @@
         </div>
         <div class="col-lg"></div>
     </div>
+
+    <!-- MODAL FORM RSVP -->
+    <!-- <div class="modal fade" id="rsvpmodal" tabindex="-1" aria-labelledby="rsvpmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- endmodal -->
 </body>
 
 <script>
     function redirectToCalendar() {
         window.open("https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Izzudin%20x%20Amira&details=Assalamualaikum%20W.B.T%20%26%20Salam%20Sejahtera.%0A%0ADengan%20izin%20Allah%20S.W.T%20ke%20atas%20hambaNya%20yang%20merancang%2C%20kami%20dengan%20segala%20hormat%20dan%20penuh%20kesyukuran%20menjemput%20YBhg.%20Datuk%2FDato'%2FDatin%2FTuan%2FPuan%20ke%20majlis%20persandingan%20putera%20%26%20puteri%20kami%20yang%20dikasihi%0A%0AMOHD%20IZZUDIN%20BIN%20RAZALI%20%26%20AMIRA%20RASHIDAH%20BINTI%20MAD%20DAUD%0A%0ATARIKH%20%2F%20DATE%0ASABTU%2C%2025%20FEB%202023%0A%0AMASA%20%2F%20TIME%0A11%3A30%20AM%20-%204%3A00&location=https%3A%2F%2Fgoo.gl%2Fmaps%2FyZXWnQJkxnBPa2KJ7&dates=20230225T033000Z%2F20230225T080000Z&ctz=Asia%2FKuala_Lumpur", "_blank")
     }
+    //function openRSVPModal() {
+    //    console.log("SDSD")
+    //    console.log($('#rsvpmodal'))
+    //    console.log($('#rsvpmodal').modal)
+    //    $('#rsvpmodal').modal('show')
+    //}
 </script>
 
 </html>
