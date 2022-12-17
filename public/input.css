@@ -2,17 +2,14 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
-
 .modal-backdrop.fade.in {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-
 /* problem modal not showing */
 .fade:not(.show) {
     opacity: inherit !important;
 }
-
 @font-face {
     font-family: aussie-ocean;
     src: url('fonts/aussie_ocean/Aussie\ Ocean.ttf');
@@ -21,29 +18,15 @@
     font-family: carolina-mountains;
     src: url('fonts/carolina_mountains/Carolina\ Mountains\ Personal\ Use.ttf');
 }
-/* @font-face {
-    font-family: marlina4;
-    src: url('fonts/marlina_4/Marlina.ttf');
-} */
 @font-face {
     font-family: type-machine;
     src: url('fonts/type_machine/Type\ Machine.ttf');
 }
-/* @font-face {
-    font-family: marcellus;
-    src: url('https: //fonts.gstatic.com/s/marcellus/v13/wEO_EBrOk8hQLDvIAF81VvoK_kgXiQ.woff2');
-} */
-/* @font-face {
-    font-family: allura;
-    src: url('fonts/allura.regular.ttf');
-} */
-
 html {
     height: 100%;
 }
-
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
     font-size: 13px !important;
     font-family: monospace !important;
@@ -51,69 +34,54 @@ body {
     background-repeat: repeat;
     background-size: cover; */
 }
-
 .icon-white{
-    /* filter: invert(1); */
     width: 35px;
     height: 35px;
 }
-/* .btn-circle {
-    display: block;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 1px solid whitesmoke;
-} */
+.icon {
+    width:25px
+}
 .rsvp {
-    /* font-family: carolina-mountains; */
-    font-family: cursive;
     font-size: 23px !important;
     color: white !important;
 }
-#template {
-    /* background-color: #fcf2f6; */
-}
-
 .font-type-machine {
     font-family: type-machine;
 }
-
-
+.font-type-cursive {
+    font-family: cursive;
+}
+.z-index-100 {
+    z-index: 100;
+}
+.bg-side{
+    background-color: whitesmoke;
+}
+#template {
+    /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175), -0 1rem 3rem rgba(0, 0, 0, .175) !important; */
+    box-shadow: inherit;
+}
 /*  //////////
     PAGE 1 
     //////////
 */ 
-
 #pg1 {
-    /* BACKGROUND */
-    /* background-image: url("img/flower-gold.jpg");
-    background-size: cover; */
     text-align: center;
-    min-height: 92vh;
+    min-height: 90vh;
     justify-content: center;
     align-items: center;
 }
 #pg1-bg {
     width: 100%;
     height: 100%;
-    background-image: url("img/flower1.png");
-    background-size: cover;
+    background-image: url("img/bg-flower.png");
+    background-size: inherit;
+    background-position: top;
     position: absolute;
     top: 0;
     opacity: 0.6;
     z-index: 1;
 }
-
-.pg-main {
-    z-index: 100;
-    position: absolute;
-}
-
-.pg1-title {
-    /* width: 100%; */
-    /* padding-top: 200px; */
-}
-
 .pg1-title2-group {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -121,67 +89,44 @@ body {
     font-size: 110px;
     line-height: 0.75em;
 }
-
-.pg1-title3 {
-    /* padding-top:100px; */
-    font-size: 16px;
-}
-.pg1-title3-loc {
-    /* padding-top:100px; */
-    font-size: 14px;
-}
-
-
 /*  //////////
     PAGE 2
     //////////
 */
-
 #pg2 {
-    /* BACKGROUND */
-    /* background-image: url("img/bg-demo.jpg");
-    background-repeat: round;
-    background-size: cover; */
-    min-height: 100vh;
+    /* codehere */
 }
-#pg2-bg {
+/* #pg2-bg {
     width: 100%;
     height: 100%;
-    background-image: url("img/flower-gold.jpg");
-    background-size: cover;
     background-position: center;
     position: absolute;
     top: 0;
     opacity: 0.6;
     z-index: 1;
-}
+} */
 .pg2-line {
     background-image: linear-gradient(#000, #000);
     background-size: 1px 90%;
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-.font-name{
-    font-family: cursive;
-    font-size: 20px;
-}
-
-.vertical-line {
-
-            display: inline-block;
-            border-left: 1px solid #ccc;
-            margin: 0 10px;
-            height: 125px;
-
-}
-
 /*  //////////
     PAGE 2
     //////////
 */
+#pg-detail {
+    background-color: #fcf2f6;
+}
 
-#pg3 {
+.details {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* padding-bottom: 150px !important; */
+}
+#pg-end {
     /* BACKGROUND */
     /* background-image: url("img/bg-demo.jpg");
     background-repeat: round;
@@ -193,7 +138,7 @@ body {
     align-items: center;
     padding-bottom: 150px !important;
 }
-#pg3-bg {
+#pg-end-bg {
     width: 100%;
     height: 100%;
     background-image: url("img/bg-demo.jpg") ;
@@ -208,4 +153,11 @@ body {
     position: fixed !important;
     bottom: 0;
     z-index: 1030;
+}
+
+#pg-call dl dt {
+    text-align: right
+}
+#pg-call dl dd {
+    text-align: left
 }
