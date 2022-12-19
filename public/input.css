@@ -180,3 +180,6 @@ body {
 #pg-call dl dd {
     text-align: left
 }
+.cursor-pointer {
+    cursor: pointer;
+}
