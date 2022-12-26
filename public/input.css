@@ -74,8 +74,14 @@ body {
 #template {
     /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175), -0 1rem 3rem rgba(0, 0, 0, .175) !important; */
     box-shadow: inherit;
-    width: 425px;
+    width: 100%;
 }
+@media only screen and (min-width: 480px) {
+    #template {
+        width: 500px;
+    }
+}
+
 /*  //////////
     PAGE 1 
     //////////
