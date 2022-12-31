@@ -1,0 +1,25 @@
+{
+    "name": "izzudinxamira",
+    "version": "1.1.0",
+    "private": true,
+    "description": "e-Invitation for Izzudin and Amira wedding",
+    "author": "Izzudin and Amira",
+    "scripts": {
+        "build": "minify public/input.css > public/input.min.css && minify public/script.js > public/script.min.js && minify dev.index.html > index.html"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "jsxBracketSameLine": true,
+        "useTabs": false,
+        "trailingComma": "none",
+        "arrowParens": "avoid"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "dependencies": {
+        "minify": "^9.1.0"
+    }
+}
