@@ -27,3 +27,5 @@ const scrollDown = () => {
     .getElementById("pg2")
     .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 };
+
+// document.addEventListener('DOMContentLoaded', mainFunction);
