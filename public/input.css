@@ -76,14 +76,14 @@ body {
     PAGE 1 
     //////////
 */ 
-#pg1 {
+#main {
     text-align: center;
     min-height: 90vh;
     justify-content: center;
     align-items: center;
     
 }
-#pg1-bg {
+#main-bg {
     width: 100%;
     height: 100%;
     background-image: url("img/bg-flower.png");
@@ -96,7 +96,7 @@ body {
     background-repeat: round;
 }
 
-.pg1-title2-group {
+.main-title2-group {
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: aussie-ocean;
@@ -107,10 +107,10 @@ body {
     PAGE 2
     //////////
 */
-#pg2 {
+#undangan {
     /* codehere */
 }
-#pg2-bg {
+#undangan-bg {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -120,7 +120,7 @@ body {
     background-size: inherit;
     background-position: top;
 }
-.pg2-line {
+.undangan-line {
     background-image: linear-gradient(#000, #000);
     background-size: 1px 90%;
     background-repeat: no-repeat;
@@ -130,10 +130,10 @@ body {
     PAGE 2
     //////////
 */
-#pg-detail {
+#info {
     /* codehere */
 }
-#pg-detail-bg {
+#info-bg {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -149,17 +149,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-#pg-end {
+#doa {
     text-align: center;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     padding-bottom: 150px !important;
 }
-#pg-end {
+#doa {
     line-height: 2;
 }
-#pg-end-bg {
+#doa-bg {
     width: 100%;
     height: 100%;
     background-image: url("https://d29539q498fyfe.cloudfront.net/public/img/tunang.jpg") ;
@@ -175,13 +175,13 @@ body {
     bottom: 0;
     z-index: 1030;
 }
-#pg-call{
+#hubungi{
     /* codehere */
 }
-#pg-call dl dt {
+#hubungi dl dt {
     text-align: right
 }
-#pg-call dl dd {
+#hubungi dl dd {
     text-align: left
 }
 .cursor-pointer {
