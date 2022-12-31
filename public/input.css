@@ -1,15 +1,3 @@
-.modal-backdrop.fade {
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.modal-backdrop.fade.in {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-/* problem modal not showing */
-.fade:not(.show) {
-    opacity: inherit !important;
-}
 @font-face {
     font-family: montserrat;
     /* src: url('fonts/Montserrat/static/Montserrat-Regular.ttf'); */
@@ -40,13 +28,9 @@ html {
     height: 100%;
 }
 body {
-    /* min-height: 100vh; */
     margin: 0;
     font-size: 13px !important;
     font-family: montserrat !important;
-    /* background-image: url("img/bg-silver.jpg");
-    background-repeat: repeat;
-    background-size: cover; */
 }
 .icon-white{
     width: 35px;
@@ -72,13 +56,19 @@ body {
     z-index: 100;
 }
 #template {
-    /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175), -0 1rem 3rem rgba(0, 0, 0, .175) !important; */
     box-shadow: inherit;
     width: 100%;
 }
+
+#icon-dropdown {
+    z-index: 200;
+    top: 82vh
+}
+
+
 @media only screen and (min-width: 480px) {
-    #template {
-        width: 500px;
+    #template, #icon-dropdown {
+        width: 500px !important;
     }
 }
 
@@ -88,7 +78,7 @@ body {
 */ 
 #pg1 {
     text-align: center;
-    min-height: 78vh;
+    min-height: 90vh;
     justify-content: center;
     align-items: center;
     
@@ -96,17 +86,14 @@ body {
 #pg1-bg {
     width: 100%;
     height: 100%;
-    /* background-image: url("https://d29539q498fyfe.cloudfront.net/public/img/bg-flower.png"); */
     background-image: url("img/bg-flower.png");
     background-size: inherit;
     background-position: top;
     position: absolute;
     top: 0;
-    /* opacity: 0.6; */
     z-index: 1;
     background-size: cover;
     background-repeat: round;
-    /* background-position-x: initial; */
 }
 
 .pg1-title2-group {
@@ -129,13 +116,9 @@ body {
     position: absolute;
     top: 0;
     z-index: 1;
-    /* opacity: 0.6; */
     background-image: url("https://d29539q498fyfe.cloudfront.net/public/img/bg1.jpg");
     background-size: inherit;
     background-position: top;
-}
-#pg2 {
-    /* background-color: #f4d7c6; */
 }
 .pg2-line {
     background-image: linear-gradient(#000, #000);
@@ -148,7 +131,7 @@ body {
     //////////
 */
 #pg-detail {
-    /* background-color: #fcf2f6; */
+    /* codehere */
 }
 #pg-detail-bg {
     width: 100%;
@@ -156,7 +139,6 @@ body {
     position: absolute;
     top: 0;
     z-index: 1;
-    /* opacity: 0.6; */
     background-image: url("https://d29539q498fyfe.cloudfront.net/public/img/flower-gold.jpg");
     background-size: cover;
     background-position: center;
@@ -166,15 +148,8 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* padding-bottom: 150px !important; */
 }
 #pg-end {
-    /* BACKGROUND */
-    /* background-image: url("img/bg-demo.jpg");
-    background-repeat: round;
-    background-size: cover; */
-
     text-align: center;
     min-height: 100vh;
     justify-content: center;
@@ -201,7 +176,7 @@ body {
     z-index: 1030;
 }
 #pg-call{
-    /* background-color: #fcf2f6; */
+    /* codehere */
 }
 #pg-call dl dt {
     text-align: right
