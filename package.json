@@ -5,7 +5,7 @@
     "description": "e-Invitation for Izzudin and Amira wedding",
     "author": "Izzudin and Amira",
     "scripts": {
-        "build": "minify public/input.css > public/input.min.css && minify public/script.js > public/script.min.js && minify dev.index.html > index.html"
+        "build": "minify public/input.css > public/input.min.css && minify public/script.js > public/script.min.js && ./usecdn.sh && minify min.index.html > index.html"
     },
     "prettier": {
         "tabWidth": 4,
