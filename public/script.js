@@ -1,12 +1,13 @@
+console.log("IN SCRIPT")
 const mainFunction = () => {
     console.log("Why? Bored?....");
     const screen = window.innerHeight;
-    const nav = document.getElementById("nav").getBoundingClientRect().height;
-    const visibleTop = screen - nav;
+    const nav = document.getElementById("nav").getBoundingClientRect();
+    const visibleTop = screen - nav.height;
 
     // position the dropdown
     const dropdown = document.getElementById("icon-dropdown");
-    dropdown.style.top = visibleTop - 65 + "px";
+    dropdown.style.top = nav.top - 45 + "px";
     var displayDropdownIcon = () => {
         const undanganCR = document
             .getElementById("undangan")

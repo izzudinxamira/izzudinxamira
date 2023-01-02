@@ -62,7 +62,6 @@ body {
 
 #icon-dropdown {
     z-index: 200;
-    top: 82vh
 }
 
 
@@ -70,6 +69,10 @@ body {
     #template, #icon-dropdown {
         width: 500px !important;
     }
+}
+
+#nav {
+    min-height: 130px;;
 }
 
 /*  //////////
