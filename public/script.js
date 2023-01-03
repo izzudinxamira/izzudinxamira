@@ -1,4 +1,3 @@
-console.log("IN SCRIPT")
 const mainFunction = () => {
     console.log("Why? Bored?....");
     const screen = window.innerHeight;
