@@ -7,3 +7,8 @@ https://www.freepik.com/free-vector/hand-painted-watercolor-floral-background_15
 
 CSS minifier: https://www.toptal.com/developers/cssminifier
 JS minifier: https://jscompress.com/
+
+
+To Publish:
+
+npm run build
